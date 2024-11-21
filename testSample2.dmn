@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20230324/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20230324/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="https://kie.org/dmn/extensions/1.0" expressionLanguage="https://www.omg.org/spec/DMN/20230324/FEEL/" namespace="https://kie.org/dmn/_24219EC5-250B-4046-81A6-06A921173373" id="testSample2" name="testSample2">
+  <inputData name="sample2" id="_46A290A0-A347-466E-BFCF-62CB25243804">
+    <variable name="sample2" id="_37493ACA-2320-4A59-8744-D17D631D5A3C" typeRef="string" />
+  </inputData>
+  <decision name="sample2Decision" id="_39F4A00F-E44D-48B0-A837-A0829E7E1D76">
+    <variable id="_609F80C9-608E-47F0-A7A1-1CBEED3B9D65" typeRef="string" name="sample2Decision" />
+    <informationRequirement id="_D9101482-9E6A-4ED6-A233-6DD24C132002">
+      <requiredInput href="#_46A290A0-A347-466E-BFCF-62CB25243804" />
+    </informationRequirement>
+    <literalExpression id="_FC89B38F-DB34-4929-8080-C2EFA8FC2235" typeRef="string" label="sample2Decision">
+      <text>sample2</text>
+    </literalExpression>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="_F546B335-6E82-4F26-9CD9-2B890740FD19" name="Default DRD" useAlternativeInputDataShape="false">
+      <di:extension>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_FC89B38F-DB34-4929-8080-C2EFA8FC2235">
+            <kie:width>190</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
+      </di:extension>
+      <dmndi:DMNShape id="_5B3F6FB9-BE50-4B66-B8AB-60DDFFDE58F0" dmnElementRef="_46A290A0-A347-466E-BFCF-62CB25243804" isCollapsed="false" isListedInputData="false">
+        <dc:Bounds x="100" y="300" width="160" height="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="_F010981B-3419-427B-8821-86EE5F6C0093" dmnElementRef="_39F4A00F-E44D-48B0-A837-A0829E7E1D76" isCollapsed="false" isListedInputData="false">
+        <dc:Bounds x="100" y="100" width="160" height="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="_E815C320-6154-48B9-82A9-BB5ACCA199E9-AUTO-TARGET" dmnElementRef="_D9101482-9E6A-4ED6-A233-6DD24C132002" sourceElement="_5B3F6FB9-BE50-4B66-B8AB-60DDFFDE58F0" targetElement="_F010981B-3419-427B-8821-86EE5F6C0093">
+        <di:waypoint x="180" y="340" />
+        <di:waypoint x="180" y="140" />
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
